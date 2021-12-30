@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: goof-app
-          image: goof:PROD
+          image: <<Docker Hub Username>>/goof:main
           ports:
             - containerPort: 3001
             - containerPort: 9229
