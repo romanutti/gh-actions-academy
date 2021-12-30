@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.1
+version: v1.22.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   SNYK-JS-MINIMIST-559764:
@@ -79,15 +79,15 @@ ignore:
   'npm:ejs:20161128':
     - ejs-locals > ejs:
         reason: no fix available
-        expires: '2021-01-10T13:00:35.080Z'
+        expires: '2022-01-29T10:56:37.830Z'
   'npm:ejs:20161130':
     - ejs-locals > ejs:
         reason: no fix available
-        expires: '2021-01-10T13:00:35.080Z'
+        expires: '2022-01-29T10:56:37.830Z'
   'npm:ejs:20161130-1':
     - ejs-locals > ejs:
         reason: no fix available
-        expires: '2021-01-10T13:00:35.080Z'
+        expires: '2022-01-29T10:56:37.830Z'
   'snyk:lic:npm:goof:GPL-2.0':
     - '':
         reason: GPL license exception approved
@@ -95,9 +95,44 @@ ignore:
   'npm:braces:20180219':
     - dustjs-linkedin > chokidar > anymatch > micromatch > braces:
         reason: no fix available
-        expires: '2021-01-10T13:00:35.080Z'
+        expires: '2022-01-29T10:56:37.830Z'
+  SNYK-JS-GLOBPARENT-1016905:
+    - dustjs-linkedin > chokidar > anymatch > micromatch > parse-glob > glob-base > glob-parent:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+  SNYK-JS-LODASHSET-1320032:
+    - snyk > snyk-nodejs-lockfile-parser > lodash.set:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+    - snyk > snyk-resolve-deps > lodash.set:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+    - snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > lodash.set:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash.set:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+  SNYK-JS-PARSELINKHEADER-1582783:
+    - snyk > snyk-docker-plugin > @snyk/snyk-docker-pull > @snyk/docker-registry-v2-client > parse-link-header:
+        reason: None given
+        expires: '2022-01-29T10:56:37.830Z'
+  SNYK-JS-ANSIREGEX-1583908:
+    - tap > treport > ink > string-length > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-01-29T10:59:24.454Z'
+    - tap > treport > ink > log-update > wrap-ansi > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-01-29T10:59:24.454Z'
+    - tap > treport > ink > log-update > wrap-ansi > string-width > strip-ansi > ansi-regex:
+        reason: None given
+        expires: '2022-01-29T10:59:24.454Z'
+  SNYK-JS-EJS-1049328:
+    - ejs-locals > ejs:
+        reason: None given
+        expires: '2022-01-29T10:59:24.454Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:ms:20151024':
     - humanize-ms > ms:
-        patched: '2020-12-11T12:59:20.536Z'
+        patched: '2021-12-30T10:54:35.435Z'
